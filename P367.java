@@ -1,3 +1,37 @@
+/*
+Repartiendo regalos en tu calle
+Tiempo máximo: 1,000-2,000 s  Memoria máxima: 4096 KiB
+Papá Noel quiere repartir juguetes a todos los niños de la mejor calle del mundo: la tuya. Para ello, consulta una lista de los portales de esa calle en los que debe dejar regalos.
+
+La forma en la que reparte los regalos es peculiar. Aterriza con su trineo en un portal determinado (que no tiene por qué ser uno en los que tiene que dar regalos), y luego sigue las siguientes reglas:
+
+Reparte los regalos al portal que tiene más cerca de su posición actual.
+La distancia entre dos portales es el valor absoluto de su resta. Es decir, la distancia entre el portal 10 y el portal 8 es 2 (10 − 8 = 2), lo mismo que la distancia entre el portal 8 y el portal 10 (valor absoluto de 8 − 10).
+Si dos portales están a igual distancia, siempre va hacia el que tiene el número más grande.
+¿Cuál es el orden en el que visita los portales?
+
+Entrada
+La entrada comienza con un número que indica el número de casos de prueba que siguen a continuación.
+
+Cada caso de prueba tiene dos líneas. La primera contiene el número p del portal en el que Papá Noel aterriza (0 ≤ p ≤ 5.000) seguido del número n de portales donde hay que repartir regalos (2 ≤ n ≤ 1.000). La segunda línea tiene n números distintos entre 0 y 5.000 con los números del portal en los que hay que dejar regalos.
+
+Salida
+Por cada caso de prueba se mostrará una única línea con el orden en el que Papá Noel irá dejando los regalos cumpliendo las normas anteriores. El portal en el que aterriza debe mostrarse únicamente si en él hay que dejar algo.
+
+Entrada de ejemplo
+3
+0 2
+2 4
+3 3
+2 5 1
+3 3
+2 4 7
+Salida de ejemplo
+ 
+2 4
+2 1 5
+4 2 7
+*/
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
